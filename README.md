@@ -10,6 +10,30 @@ You can test this with next command:
 julia test.jl
 ```
 
+Then change `maxPrecision` to `80` in `test.jl`:
+
+```julia
+using Test
+include("main.jl")
+using .EfficientFibonacci
+
+maxPrecision = 80
+
+open("./first10.txt") do f
+  if eof(f)
+    throw("File is empty")
+  end
+...
+```
+
+It gives you the following result:
+```bash
+Test Failed at efficient-fibonacci\test.jl:32
+  Expression: expected == actual
+   Evaluated: "14472334024676221" == "14472334024676222"
+ERROR: LoadError: There was an error during testin
+```
+
 ## Usage
 
 - as module
