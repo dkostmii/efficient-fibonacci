@@ -2,6 +2,8 @@
 
 Tried to implement efficient Fibonacci sequence using only multiplication by Golden ratio.
 
+Inspired by [https://youtu.be/i8FukKfMKCI?t=175](https://youtu.be/i8FukKfMKCI?t=175)
+
 With that, it gives proper results up to `79` first Fibonacci numbers.
 
 You can test this with next command:
